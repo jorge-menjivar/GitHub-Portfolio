@@ -12,6 +12,8 @@ import { GithubPost } from '@/types/github';
 import { Feed } from 'feed';
 import { marked } from 'marked';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
   revalidatePath('/feed.xml');
   const ghToken = getGithubToken();

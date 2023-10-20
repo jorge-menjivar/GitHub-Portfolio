@@ -9,6 +9,8 @@ import {
 
 import { GithubProject } from '@/types/github';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
   revalidatePath('/api/github/projects');
   const ghToken = getGithubToken();

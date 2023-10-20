@@ -8,6 +8,8 @@ import {
 
 import { GithubPost } from '@/types/github';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
   revalidatePath('/api/github/posts');
   const ghToken = getGithubToken();
