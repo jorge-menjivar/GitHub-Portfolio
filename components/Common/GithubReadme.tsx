@@ -83,9 +83,11 @@ export const GithubMarkdown = ({
         },
         table({ children }) {
           return (
-            <table className="border-collapse border border-black px-3 py-1 dark:border-white">
-              {children}
-            </table>
+            <div className="flex overflow-auto">
+              <table className="border-collapse border border-black px-3 py-1 dark:border-white">
+                {children}
+              </table>
+            </div>
           );
         },
         th({ children }) {
@@ -181,6 +183,9 @@ export const GithubMarkdown = ({
               {children}
             </h4>
           );
+        },
+        pre({ children }) {
+          return <pre className="flex overflow-auto w-full">{children}</pre>;
         },
       }}
     >
