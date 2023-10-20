@@ -57,7 +57,7 @@ export async function GET() {
       const post: GithubPost = {
         title,
         publish_date: publishDate,
-        download_url,
+        raw_name: rawPost.name,
       };
 
       return post;

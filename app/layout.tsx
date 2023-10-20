@@ -19,6 +19,16 @@ export const metadata: Metadata = {
   description: process.env.NEXT_PUBLIC_SITE_DESCRIPTION,
   viewport:
     'height=device-height, width=device-width, initial-scale=1, user-scalable=no viewport-fit=cover',
+  alternates: {
+    types: {
+      'application/rss+xml': [
+        {
+          url: '/feed.xml',
+          title: 'RSS Feed',
+        },
+      ],
+    },
+  },
 };
 
 export default function RootLayout({

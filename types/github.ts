@@ -30,5 +30,5 @@ export interface GithubProject {
 export interface GithubPost {
   title: string;
   publish_date: string;
-  download_url: string;
+  raw_name: string;
 }
