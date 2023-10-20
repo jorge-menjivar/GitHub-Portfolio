@@ -55,19 +55,19 @@ export const Navbar = ({ initialLocation }: { initialLocation: string }) => {
   return (
     <header
       className="fixed flex items-center p-3 border-b px-4
-    transition-all duration-400 ease-in-out z-50 w-full gap-x-4 shadow-md
+    transition-all duration-400 ease-in-out z-50 w-full shadow-md
     bg-white dark:bg-gray-900 dark:border-gray-800
     "
       style={{ top: showNavbar ? '-1px' : '-120px' }}
     >
       <div className="flex flex-row w-full sm:w-3/4 lg:w-2/3 2xl:w-1/2 mx-auto">
-        <div className="flex flex-row items-center gap-x-4">
+        <div className="flex flex-row items-center gap-x-2 sm:gap-x-4">
           <NavLink href="/" title="Home" />
           <NavLink href="/projects" title="Projects" />
           <NavLink href="/about" title="About" />
         </div>
         <div className="flex-grow" />
-        <div className="flex flex-row items-center gap-x-4">
+        <div className="flex flex-row items-center gap-x-2 sm:gap-x-4">
           {process.env.NEXT_PUBLIC_EMAIL && (
             <a
               href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
