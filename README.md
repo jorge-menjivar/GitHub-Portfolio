@@ -66,6 +66,8 @@ developers and makers!
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjorge-menjivar%2FGitHub-Portfolio&env=GITHUB_TOKEN,NEXT_PUBLIC_GITHUB_USERNAME,NEXT_PUBLIC_GITHUB_POSTS_REPO&envDescription=These%20are%20the%20only%20variables%20needed%20to%20get%20your%20site%20going.&envLink=https%3A%2F%2Fgithub.com%2Fjorge-menjivar%2FGitHub-Portfolio%23required)
 
+That's it! Your site will be deployed and you will be able to see it. You can continue to customize it by adding the following environment variables in Vercel.
+
 ## Personalizing your site
 
 ### Required
@@ -94,3 +96,16 @@ developers and makers!
 | NEXT_PUBLIC_LINKEDIN_PROFILE | Your LinkedIn profile URL |
 | NEXT_PUBLIC_THREADS_PROFILE  | Your Threads profile URL  |
 | NEXT_PUBLIC_X_PROFILE        | Your X profile URL        |
+
+## Publishing blog posts
+
+To publish a blog post all you need to do is add a markdown file to the `posts` folder in your blog posts repo.
+
+We use a simple name format for the markdown files. The format is `YYYY-MM-DD-post-title.md`.
+This date will be used as the publish date of the post in your site. The file name will also be used as the URL slug for the post. For example, if you create a file named `2023-10-19 hello world.md`, the URL for the post will be `https://your-site.com/posts/2023-10-19%20hello%20world`.
+
+Once you create the file, it will be automatically added to your site. You can edit the file and commit it to update the post.
+
+## Contributing
+
+You can contribute to this project by creating a pull request. If you have any questions, feel free to open an issue or reach out to me on via email or social.
