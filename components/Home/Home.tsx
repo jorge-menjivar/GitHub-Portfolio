@@ -6,10 +6,10 @@ import { Title } from '../Common/Text';
 
 const Home = () => {
   return (
-    <div>
+    <div className="flex min-h-full">
       <Navbar initialLocation="/" />
       <Body>
-        <Title>{"Jorge Menjivar's Space"}</Title>
+        <Title>{process.env.NEXT_PUBLIC_HOME_TITLE}</Title>
         <Content>
           <PostsList />
         </Content>

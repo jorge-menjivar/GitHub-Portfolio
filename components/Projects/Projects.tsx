@@ -6,16 +6,15 @@ import { Title } from '../Common/Text';
 
 export const Projects = () => {
   return (
-    <>
+    <div>
       <Navbar initialLocation="/projects" />
-
       <Body>
         <Title>Open-source Projects</Title>
         <Content>
           <ProjectsList />
         </Content>
       </Body>
-    </>
+    </div>
   );
 };
 

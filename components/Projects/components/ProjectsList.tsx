@@ -63,7 +63,7 @@ export const ProjectsList = () => {
               </CardContent>
               <CardFooter className="gap-x-6">
                 <Badge variant="outline">{project.language}</Badge>
-                <div className="flex flex-row text-2xs items-center">
+                <div className="flex-row text-2xs items-center hidden sm:flex">
                   <IconScale size={16} className="mr-1" />
                   {project.license?.name}
                 </div>
@@ -78,7 +78,7 @@ export const ProjectsList = () => {
                   {project.forks_count}
                 </div>
 
-                <div className="flex flex-row text-2xs items-center">
+                <div className="flex-row text-2xs items-center hidden sm:flex">
                   Updated {format(new Date(project.pushed_at), 'MMM dd, yyyy')}
                 </div>
               </CardFooter>

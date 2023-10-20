@@ -53,14 +53,18 @@ export const PostsList = () => {
             href={`/posts/${post.publish_date}%20${post.title}`}
           >
             <Card>
-              <CardContent className="py-0">
-                <CardTitle>{post.title}</CardTitle>
+              <CardContent className="m-2 p-0">
+                <div className="flex flex-row mx-2">
+                  <div className="flex min-h-full items-center">
+                    <Badge variant="default">
+                      {format(new Date(post.publish_date), 'MMM dd, yyyy')}
+                    </Badge>
+                  </div>
+                  <h3 className="leading-none p-0 m-0 ml-3 my-2 truncate font-light">
+                    {post.title}
+                  </h3>
+                </div>
               </CardContent>
-              <CardFooter className="gap-x-6">
-                <Badge variant="outline">
-                  {format(new Date(post.publish_date), 'MMM dd, yyyy')}
-                </Badge>
-              </CardFooter>
             </Card>
           </Link>
         );

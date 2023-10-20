@@ -14,7 +14,7 @@ export async function GET() {
 
   // Using this endpoint because it returns more data than the /user/repos endpoint
   const response = await fetch(
-    `https://api.github.com/users/${ghUsername}/repos`,
+    `https://api.github.com/users/${ghUsername}/repos?per_page=100`,
     {
       headers: {
         Accept: 'application/vnd.github+json',
