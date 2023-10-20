@@ -1,3 +1,4 @@
+import { revalidatePath } from 'next/cache';
 import { NextResponse } from 'next/server';
 
 import {
@@ -9,6 +10,7 @@ import {
 import { GithubProject } from '@/types/github';
 
 export async function GET() {
+  revalidatePath('/api/github/projects');
   const ghToken = getGithubToken();
   const ghUsername = getGithubUsername();
 

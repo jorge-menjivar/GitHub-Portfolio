@@ -1,5 +1,6 @@
 import { IconArrowLeft } from '@tabler/icons-react';
 
+import { revalidatePath } from 'next/cache';
 import Link from 'next/link';
 
 import { GithubMarkdown } from '@/components/Common/GithubReadme';

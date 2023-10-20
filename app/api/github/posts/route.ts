@@ -1,3 +1,4 @@
+import { revalidatePath } from 'next/cache';
 import { NextResponse } from 'next/server';
 
 import {
@@ -7,9 +8,8 @@ import {
 
 import { GithubPost } from '@/types/github';
 
-import { format } from 'date-fns';
-
 export async function GET() {
+  revalidatePath('/api/github/posts');
   const ghToken = getGithubToken();
   const ghUsername = getGithubUsername();
 
@@ -20,7 +20,7 @@ export async function GET() {
         Accept: 'application/vnd.github+json',
         Authorization: `token ${ghToken}`,
         'X-GitHub-Api-Version': '2022-11-28',
-        'cache-control': 'no-cache',
+        'cache-control': 'public, max-age=0, s-maxage=0',
       },
     },
   );
@@ -66,5 +66,5 @@ export async function GET() {
     posts = posts.filter((post: GithubPost) => !!post);
   }
 
-  return NextResponse.json({ posts });
+  return NextResponse.json({ posts }, { status: response.status });
 }

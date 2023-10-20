@@ -1,3 +1,4 @@
+import { revalidatePath } from 'next/cache';
 import { NextResponse } from 'next/server';
 
 import {
@@ -8,11 +9,11 @@ import {
 
 import { GithubPost } from '@/types/github';
 
-import { format } from 'date-fns';
 import { Feed } from 'feed';
 import { marked } from 'marked';
 
 export async function GET() {
+  revalidatePath('/feed.xml');
   const ghToken = getGithubToken();
   const ghUsername = getGithubUsername();
   const ghPostsRepo = getGithubPostsRepo();
