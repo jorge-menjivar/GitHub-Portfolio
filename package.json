@@ -36,6 +36,7 @@
     "rehype-raw": "^7.0.0",
     "remark-gfm": "^3.0.1",
     "remark-math": "^6.0.0",
+    "sitemap": "^7.1.1",
     "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {
