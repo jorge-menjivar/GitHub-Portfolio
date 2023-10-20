@@ -35,7 +35,7 @@ export async function GET() {
       author: {
         name: process.env.AUTHOR_NAME || '',
         email: process.env.AUTHOR_EMAIL || '',
-        link: process.env.AUTHOR_LINK || '',
+        link: process.env.SITE_URL || '',
       },
     });
 
@@ -74,7 +74,7 @@ export async function GET() {
             {
               name: process.env.AUTHOR_NAME || '',
               email: process.env.AUTHOR_EMAIL || '',
-              link: process.env.AUTHOR_LINK || '',
+              link: process.env.SITE_URL || '',
             },
           ],
           date: new Date(post.publish_date),

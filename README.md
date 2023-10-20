@@ -72,11 +72,12 @@ That's it! Your site will be deployed and you will be able to see it. You can co
 
 ### Required
 
-| Environment Variable          | Description                                |
-| ----------------------------- | ------------------------------------------ |
-| GITHUB_TOKEN                  | The GitHub token to use for fetching repos |
-| NEXT_PUBLIC_GITHUB_USERNAME   | Your GitHub username                       |
-| NEXT_PUBLIC_GITHUB_POSTS_REPO | The name of the repo to use for blog posts |
+| Environment Variable          | Description                                               |
+| ----------------------------- | --------------------------------------------------------- |
+| GITHUB_TOKEN                  | The GitHub token to use for fetching repos                |
+| NEXT_PUBLIC_GITHUB_USERNAME   | Your GitHub username                                      |
+| NEXT_PUBLIC_GITHUB_POSTS_REPO | The name of the repo to use for blog posts                |
+| SITE_URL                      | The URL of your site. You will need this for SEO and RSS. |
 
 ### Site configuration
 
@@ -96,6 +97,15 @@ That's it! Your site will be deployed and you will be able to see it. You can co
 | NEXT_PUBLIC_LINKEDIN_PROFILE | Your LinkedIn profile URL |
 | NEXT_PUBLIC_THREADS_PROFILE  | Your Threads profile URL  |
 | NEXT_PUBLIC_X_PROFILE        | Your X profile URL        |
+
+### RSS Feed
+
+| Environment Variable | Description                                               |
+| -------------------- | --------------------------------------------------------- |
+| RSS_FEED_TITLE       | The title for your feed                                   |
+| RSS_FEED_DESCRIPTION | The description for it                                    |
+| AUTHOR_NAME          | Your name                                                 |
+| AUTHOR_EMAIL         | Your email address, if you want to include it in the feed |
 
 ## ✍ Publishing blog posts
 
