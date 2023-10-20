@@ -4,7 +4,7 @@ GitHub Portfolio lets you create your own portfolio + blogging website
 in 1 minute. GitHub Portfolio uses your GitHub repos to create a
 personalized website for you.
 
-## How does it work?
+## 🪄 How does it work?
 
 GitHub Portfolio uses the following to generate your portfolio website:
 
@@ -19,7 +19,7 @@ GitHub Portfolio uses the following to generate your portfolio website:
 So everything on your portfolio comes directly from your GitHub account
 activity. The more you use GitHub, the richer your portfolio becomes!
 
-## Why use it?
+## 🌟 Why use it?
 
 GitHub Portfolio provides a simple way to create a portfolio that
 showcases your work on GitHub. Here are some of the benefits:
@@ -52,7 +52,7 @@ In short, GitHub Portfolio lets you focus on your projects while it
 handles the portfolio generation and hosting. The perfect solution for
 developers and makers!
 
-## Getting Started
+## 🚧 Getting Started
 
 1. Create a new GitHub token. The token only needs access to your
    public repositories. You can create one
@@ -68,7 +68,7 @@ developers and makers!
 
 That's it! Your site will be deployed and you will be able to see it. You can continue to customize it by adding the following environment variables in Vercel.
 
-## Personalizing your site
+## ✨ Personalizing your site
 
 ### Required
 
@@ -97,7 +97,7 @@ That's it! Your site will be deployed and you will be able to see it. You can co
 | NEXT_PUBLIC_THREADS_PROFILE  | Your Threads profile URL  |
 | NEXT_PUBLIC_X_PROFILE        | Your X profile URL        |
 
-## Publishing blog posts
+## ✍ Publishing blog posts
 
 To publish a blog post all you need to do is add a markdown file to the `posts` folder in your blog posts repo.
 
@@ -106,6 +106,10 @@ This date will be used as the publish date of the post in your site. The file na
 
 Once you create the file, it will be automatically added to your site. You can edit the file and commit it to update the post.
 
-## Contributing
+## 🤝 Contributing
 
 You can contribute to this project by creating a pull request. If you have any questions, feel free to open an issue or reach out to me on via email or social.
+
+## 📝 License
+
+GitHub Portfolio is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more information.
