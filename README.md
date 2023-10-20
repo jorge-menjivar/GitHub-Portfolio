@@ -54,17 +54,19 @@ developers and makers!
 
 ## Getting Started
 
-1.  Click this button to deploy to Vercel.
+1. Create a new GitHub token. The token only needs access to your
+   public repositories. You can create one
+   here: [https://github.com/settings/tokens](https://github.com/settings/tokens)
 
-2.  Create a new GitHub token. The token only needs access to your
-    public repositories. You can create one
-    here: [https://github.com/settings/tokens](https://github.com/settings/tokens)
+2. Create a public repo with whatever name you want. This will be used
+   to store your blog posts. Inside the repo, create a folder named
+   `posts`. This is where your blog posts will be stored.
 
-3.  Configure the environment variables inside Vercel. Below is a list
-    of all supported variables. You can also use the
-    [`.env.example`](./.env.example) file as a reference.
+3. You will need your github token, username and the name of the repo you just created. Click the following button to deploy to Vercel, it will ask for these three things.
 
-## Environment Variables
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjorge-menjivar%2FGitHub-Portfolio&env=GITHUB_TOKEN,NEXT_PUBLIC_GITHUB_USERNAME,NEXT_PUBLIC_GITHUB_POSTS_REPO&envDescription=These%20are%20the%20only%20variables%20needed%20to%20get%20your%20site%20going.&envLink=https%3A%2F%2Fgithub.com%2Fjorge-menjivar%2FGitHub-Portfolio%23required)
+
+## Personalizing your site
 
 ### Required
 
@@ -76,12 +78,12 @@ developers and makers!
 
 ### Site configuration
 
-| Environment Variable         | Description                                 |
-| ---------------------------- | ------------------------------------------- |
-| GITHUB_EXCLUDE_LIST          | A comma-separated list of repos to exclude  |
-| NEXT_PUBLIC_SITE_TITLE       | The title of your site (Tab title)          |
-| NEXT_PUBLIC_SITE_DESCRIPTION | The description of your site                |
-| NEXT_PUBLIC_FOOTER           | The footer to use at the bottom of the site |
+| Environment Variable         | Description                                                         |
+| ---------------------------- | ------------------------------------------------------------------- |
+| GITHUB_EXCLUDE_LIST          | A comma-separated list of repos to exclude from your projects list. |
+| NEXT_PUBLIC_SITE_TITLE       | The title of your site (Tab title)                                  |
+| NEXT_PUBLIC_SITE_DESCRIPTION | The description of your site                                        |
+| NEXT_PUBLIC_FOOTER           | The footer to use at the bottom of the site                         |
 
 ### Social links
 
