@@ -2,7 +2,7 @@
 
 GitHub Portfolio lets you create your own portfolio + blogging website
 in 1 minute. GitHub Portfolio uses your GitHub repos to create a
-personalized website for you.
+personalized website for you. Here's a [live demo](https://jmenjivar.com/).
 
 ## 🪄 How does it work?
 
